@@ -1,4 +1,4 @@
- // singleton
+  // singleton
  // Object.create
 
  // object literals
@@ -42,4 +42,3 @@
 
 
  
-
