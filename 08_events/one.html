@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">    // javascript ma jitna bhi events hota hai vo sequentially hi run hota hai
+<html lang="en">    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,4 +15,57 @@
         </ul>
       </div>
 </body>
+<script>
+    //  document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked")
+    // }
+
+    // attachEvent()
+    // jQuery - on
+
+     // type,  timestamp, defaultPrevented
+     // target, toElement, srcElement, currentTarget,
+     // clientX, clientY, screenX, screenY
+     // altKey, ctrlKey, shiftKey, keyCode
+
+    //  document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    //  }, false)
+     
+    //  document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    //  }, false)
+
+    //  document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("google clicked");
+    //      }, false)
+
+       document.querySelector('#images').addEventListener
+       ('click' ,function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG'){
+            console.log(e.target.Id);
+           let removeIt = e.target.parentNode
+         removeIt.remove()
+       }
+    }
+ 
+     //removeIt.parentNode.removeChild(removeIt)
+</script>
 </html>
+
+
+// notes about Events
+// 1. javascript ma jitna bhi events hota hai vo sequentially hi run hota hai.
+// 2. addEventListener huma sirf on click ki functionality ka sath apko propogation ki ability data hai.
+// 3. event propogation ma sara ka sara kam bubbling up ka kam hai or bubble up koi chig Bottom to Top jata hai.
+// 4. true = capturing mode is going on Top to Bottom.
+// 5. e.target → The exact element that was clicked (or triggered the event) AND parentNode → The parent element of that clicked element.
+// 6. There are two methods to remove the (e.target.parentNode) -:
+      let removeIt = e.target.parentNode
+      a. removeIt.remove().      here we use if statement when condition is not fulfill
+      b. removeIt.parentNode.removeChild(removeIt)
+// 7. 
