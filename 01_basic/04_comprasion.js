@@ -21,7 +21,7 @@ console.log(undefined == 0); // false
  console.log(null > 0);
  console.log(null < 0);
 
- //=== check the value strictly means uski data type ko bhi check karta hai.
+ //  ⭐  === check the value strictly means uski data type ko bhi check karta hai.(value + type )
 
  console.log("2" === 2);
  

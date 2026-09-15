@@ -1,6 +1,6 @@
- // primitive
+ // primitive - Call by Value
 
- // 7 types of : Boolean , String, Number, Null, Undefined, Symbol, BigInt
+ // 7 types of : Boolean , String, Number, Null, Undefined, Symbol(kisi bhi value ko unique bana ka liya use hota hai), BigInt
 
  const score =  100
  const scorevalue = 100.3
@@ -24,17 +24,17 @@
 
 const heroes = ["shaktiman" , "naajrag ", "doga"]; // example of array
 
-let myObject =  {
+let myObj  =  {
     name :"Ankur yadav", // example of object
     age : 20,
 }
 
-const myFunction = function(){
-    console.log("helo World");
+const myFunction = function(){        // we use here functions as a variable by using const.
+    console.log("hello World");
 
 }
 
- console.log(typeof anotherId);
+ console.log(typeof anotherId);  // typeof is used to know the type of data type .output = symbol
  //https://262.ecma-international.org/5.1/#sec-11.4.3
 
 
@@ -64,12 +64,14 @@ let userTwo = userOne
     console.log(userTwo.email);
 
 
+// ***** Revision ****
+// data memory ma kis terha sa store hota hai, or kis terha se app apna data ko access kar sakta ho isi ka basis pa do categorization kiya gya hai data type ko.
+// 1) Primitive  AND  2) NON-Primitive.
 
- 
+//  Javascript is a dynamic typed language.
+// null is a object data type.
 
-
-
-
+// ALl the non - primitive type  is  a typeof  (object) data type.
 
 
 
