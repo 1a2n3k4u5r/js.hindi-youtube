@@ -64,7 +64,7 @@ let userTwo = userOne
     console.log(userTwo.email);
 
 
-// ***** Revision ****
+// ***** Revision 1 ****
 // data memory ma kis terha sa store hota hai, or kis terha se app apna data ko access kar sakta ho isi ka basis pa do categorization kiya gya hai data type ko.
 // 1) Primitive  AND  2) NON-Primitive.
 
@@ -74,6 +74,8 @@ let userTwo = userOne
 // ALl the non - primitive type  is  a typeof  (object) data type.
 
 
-
+//    ***** Revision 2 *****
+// jab bhi stack memory use hoti hai iska matlab jo bhi apna variable declare kiya hai uska copy milta hai ,
+// or jab bhi ek memory heap ka andar define hota hai to wha se huma ek reference milta hai original value ka.
 
 
