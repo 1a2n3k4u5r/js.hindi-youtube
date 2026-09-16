@@ -70,19 +70,24 @@ console.log(tinderUser); // { id: '123abc', name: 'Sammy', isLoggedIn: false }
  // console.log(courseInstructor);
  console.log(instructor);
 
+
+ //    ****** JSON = javascript object notation ******  
+ // APIs in the form of object
+
  // {
  // "name": "hitesh",
  // "coursename": "js in hindi",
  // "price": "free"
   // }
 
+  // APIs in the form of array
   [
-    {},
+    {},  
     {},
     {}
   ]
 
-
+//apko object json formate ma hi bhajana hota hai.
  
 
 
