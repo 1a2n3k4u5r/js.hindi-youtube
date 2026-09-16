@@ -1,16 +1,21 @@
 //var c = 300    
-let a = 300      //global scope
-if(true) {                {} //scope
-      let  a = 10
-      const b = 20                  //block scope
-     //  console.log("INNER: ", a);
-}
+let a = 300    //global scope
 
- // for (let i =0; i< Array.length; i++){
+if(true) {                
+      let  a = 10
+      const b = 20            
+     // console.log("INNER: ", a);
+}   
+
+{} //scope
+
+// if ka andar jo bhi likha hai vo ha block scope or uska bhar jo bhi likhata hai vo hai global scope and global scope ma app jo bhi value likhata hai vo scope ka liya available hoti lakin vice-versa is not true.
+
+ // for (let i =0; i< array.length; i++){
      //  const element = array[i]; 
  // }
 
-  //console.log(a);
+  console.log(a);
  // console.log(b);
  // console.log(c);
 
