@@ -48,11 +48,13 @@ const regularUser = {
 users[1].email
 console.log(tinderUser); // { id: '123abc', name: 'Sammy', isLoggedIn: false }
 
- console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ] -> datatype are Array
- console.log(Object.values(tinderUser));  //  '123abc', 'Sammy', false ]
- console.log(Object.entries(tinderUser));  // [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
+ console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ] -> datatype are Array or Object.keys() → object ki keys ko array ke form mein return karta hai.
 
- console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+ console.log(Object.values(tinderUser));  //  '123abc', 'Sammy', false ]
+
+ console.log(Object.entries(tinderUser));  // [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ] // har ek key values ko array ma bna diya jata hai.
+
+ console.log(tinderUser.hasOwnProperty('isLoggedIn'))  // this is used to check that properties are there before use it give the answer in the form of true or false.
 
  
  const course = {
