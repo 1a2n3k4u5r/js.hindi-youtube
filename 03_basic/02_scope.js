@@ -25,14 +25,14 @@ if(true) {
 
     function two(){
         const website = "youtube"
-        console.log(username);   // closure
+        console.log(username);   // closure = jab andar ka function bhar ka variable ko access kar pata ha to usko closure khata hai or Jab ek inner function, apne outer function ke variables ko yaad rakhta hai, even after outer function finish ho chuka ho.
     }
      // console.log(website);
 
     two()
  }
+ //one()
 
-      //one()
 
       if (true) {
         const username = "ankur"
@@ -41,11 +41,10 @@ if(true) {
             // console.log(username + website);
         }
            // console.log(website);
-
-      } 
-
+ } 
        // console.log(username);
 
+        
 
 // +++++++++++++++++++++ interesting +++++++++++
 
