@@ -19,15 +19,16 @@ if (Object.keys(emptyObj).length ===0) {
     console.log("Object is empty");
 }
 
- // Nullish Coalescing Operator (??): null indefined
+ // Nullish Coalescing Operator (??): null, indefined
 
   let val1;
-  // val1 = null ?? 10
- //  val1 = undefined ?? 15
- val1 = null ?? 10 ?? 20
-
+  // val1 = 5 ?? 10   // output = 5
+  // val1 = null ?? 10   // output = 10
+ //  val1 = undefined ?? 15    // output = 15
+ val1 = null ?? 10 ?? 20    // output = 10
 
 console.log(val1);
+
 
 // Terniry operator
 

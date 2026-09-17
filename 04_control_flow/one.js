@@ -8,6 +8,8 @@ const temperature = 41
     //console.log("temperature is greater than 50");
  }
  //console.log("Execute")
+
+
  // <, >, <=, >=, ==, !=, === is used to check the type , !==
 
 
@@ -42,10 +44,10 @@ const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-if(userLoggedIn && debitCard && 2==2){
+if(userLoggedIn && debitCard && 2==2){    // && matlab all condition are true.
     console.log("Allow to buy course")
 }
 
-if (loggedInFromGoogle || loggedInFromEmail){
+if (loggedInFromGoogle || loggedInFromEmail){    // || matlab sirf ek bhi condition true  ha to ma apna kaam karunga
      console.log("User logged in");
 }
