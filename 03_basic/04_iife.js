@@ -8,6 +8,8 @@
  
  // ()() // first paranthesis for function definition , and second paranthesis for execution call.
 
+
+ // Simple iife
   ( (name) => {
     console.log(`DB CONNECTED TWO ${name}`)
   } )('ankur')
