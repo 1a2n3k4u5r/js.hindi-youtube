@@ -9,11 +9,12 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 // console.log(values);
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-//  const newNums = myNums.filter((num) => num > 4 ) // filter bhi apna andar call back hi lata hai, output are [ 5, 6, 7, 8, 9, 10 ]
+//  const newNums = myNums.filter((num) => num > 4 ) // filter bhi apna andar call back hi lata hai,or ye output deta hai, output are [ 5, 6, 7, 8, 9, 10 ]
 
 // const newNums = myNums.filter ( (num) => {
 //    return num > 4 // agar hum curly braces lagata hai to huma return likhna hi padega nhi to output shi nhi ayga []
 // })
+
 
 // const newNums = []
 
@@ -60,3 +61,7 @@ let userBooks = books.filter ( (bk) => bk.genre === 'History' )
 userBooks = books.filter ( (bk) => {
     return bk.publish >= 1995 && bk.genre === "History"})
 console.log(userBooks);
+
+
+// Foreach koi bhi value return nhi karta.
+// jab bhi hum filter use karenga to uska andar huma call back  function milega  jiska andar har ek value each excess kiya jayga lakin uska baad hum ek condition dana padega jo jo log uss condition ko satisfy karenga or true hogi condition vo vo value return ki jyega  
