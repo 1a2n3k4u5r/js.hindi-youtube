@@ -1,6 +1,6 @@
  // for
 
- for (let i = 0; i <= 10; i++) {    // curly braces means block scope
+ for (let i = 0; i <= 10; i++) {    // curly braces means block scope and where (i<= 10) is a condition check.
     const element = i;
     if(element == 5){
        //  console.log("5 is best number");
