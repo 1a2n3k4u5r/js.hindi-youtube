@@ -2,9 +2,12 @@
 
 //   const newNums = myNumers.map( (num) => { return num + 10})
 
+
+
+//******** chaining  *******/
 const newNums = myNumers
-     .map( (num) => num * 10)
+     .map( (num) => num * 10)  // map ma value return hota hai
      .map( (num) => num + 1)
-.filter ( (num) => num >= 40)
+.filter ( (num) => num >= 40)   // filter matlab jo true hoga wahi pass hoga
   console.log(newNums);
 
