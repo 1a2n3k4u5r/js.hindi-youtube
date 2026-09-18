@@ -20,4 +20,6 @@ do {
      score++
 }  while (score <= 10);
 
+// phela kam hota hai phir condition check hota hai
+
 
