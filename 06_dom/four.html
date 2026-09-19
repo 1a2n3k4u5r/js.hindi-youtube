@@ -14,6 +14,9 @@
     
 </body>
 <script>
+
+
+      // 1) These is 1st format used to add value using innerHTML
      function addLanguage(langName){
        const li  =  document.createElement('li');
        li.innerHTML =`${langName}`
@@ -21,7 +24,9 @@
      }
      addLanguage("python")
      addLanguage("typescript")
-      
+
+
+      // 2) These is 2nd format to add value using appendChild
       function addOptiLanguage(langName){
         const li = document.createElement('li');
         li.appendChild(document.createTextNode(langName))
@@ -29,19 +34,28 @@
       }
       addoptiLanguage('golang')
 
+
       //Edit or replace
+
+      // 1st approach to edit 
      const secondLang =  document.querySelector("li:nth-child(2)")
-     //secondLang.innerHTML = "Mojo"
+     secondLang.innerHTML = "Mojo"
+
+
+      // 2nd approach to edit
      const newli = document.createElement('li')
      newli.textContent = "Mojo"
      secondLang.replaceWith(newli)
 
-     //edit
+
+     // 3rd approach to edit
      const firstLang= document.querySelector("li: first-child")
      firstLang.outerHTML = '<li>TypeScript</li>'
+
 
     //remove
      const lastLang = document.querySelector('li:last-child')
      lastLang.remove()
+     
 </script>
 </html>
