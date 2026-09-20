@@ -16,9 +16,19 @@
       </div>
 </body>
 <script>
-    //  document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked")
-    // }
+  
+
+     // 2nd approach is using onclick  jo ki feature kam deta hai
+    document.getElementById('owl').onclick = function(){  
+         alert("owl clicked")
+     }
+
+
+     // 3rd approach 
+     document.getElementById('owl').addEventListener('click', function(){
+       alert('owl clicked again')
+     })
+     
 
     // attachEvent()
     // jQuery - on
@@ -28,14 +38,18 @@
      // clientX, clientY, screenX, screenY
      // altKey, ctrlKey, shiftKey, keyCode
 
+
+      // event object (e)
     //  document.getElementById('owl').addEventListener('click', function(e){
-    //     console.log("clicked inside the ul");
+    //      console.log("click inside the ul");
     //  }, false)
      
+
     //  document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()
     //  }, false)
+
 
     //  document.getElementById('google').addEventListener('click', function(e){
     //     e.preventDefault();
@@ -43,22 +57,23 @@
     //     console.log("google clicked");
     //      }, false)
 
-       document.querySelector('#images').addEventListener
-       'click' ,function(e){
-        console.log(e.target.tagName);
+
+
+       document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);  
         if (e.target.tagName === 'IMG'){
             console.log(e.target.Id);
            let removeIt = e.target.parentNode
          removeIt.remove()
        }
-    }
+    })
  
      //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
 
 
-// notes about Events
+<!-- // notes about Events
 // 1. javascript ma jitna bhi events hota hai vo sequentially hi run hota hai.
 // 2. addEventListener huma sirf on click ki functionality ka sath apko propogation ki ability data hai.
 // 3. event propogation ma sara ka sara kam bubbling up ka kam hai or bubble up koi chig Bottom to Top jata hai.
@@ -68,4 +83,9 @@
       let removeIt = e.target.parentNode
       a. removeIt.remove().      here we use if statement when condition is not fulfill
       b. removeIt.parentNode.removeChild(removeIt)
-// 7. 
+//
+
+// Event propogation ka two context hota hai -->
+<!-- 1) Event Bubbling = false
+     2) Event Capturing = true = top to bottom
+      -->
