@@ -1,17 +1,27 @@
-const promiseOne = new Promise(function(resolve, reject){  // Promise = A callback used to initialize the promise. This callback is passed two arguments: a resolve callback used to resolve the promise with a value or the result of another promise, and a reject callback used to reject the promise with a.
-    // Do an async task.  
-    //DB calls, cryptography,network
+fetch("https://something.com").then().catch.finally      // response (.then) ma ata hai or resolve ka connection ha .then ka sath, error (.catch) ma ata hai, 
+// new keyword se ek nha instance mil jata hai.
+
+
+// 1) Promise  Using Variable 
+
+// promise create
+const promiseOne = new Promise(function(resolve, reject){ 
+       // Do an async task.  
+        //DB calls, cryptography,network 
     setTimeout(function(){
         console.log('Async task is complete');
-        resolve()
+        resolve()   // this line is used to connect the reslove with (.then)
     },1000)
 }) 
 
+// consume promise
  promiseOne
  .then(function(){
     console.log("promise consumed");
  })
 
+
+ // 2) Promise
  new Promise(function(resolve,reject){
     setTimeout(function(){
         console.log("Async task 2")
@@ -21,6 +31,9 @@ const promiseOne = new Promise(function(resolve, reject){  // Promise = A callba
     console.log("Async 2 resolved");
  })
 
+
+
+ // 3) Promise
  const promiseThree = new Promise(function(resolve,reject){
     setTimeout(function(){
         resolve({username: "Chai", email: "chai@example.com"})
@@ -31,9 +44,11 @@ const promiseOne = new Promise(function(resolve, reject){  // Promise = A callba
  promiseThree
  .then(function(user){
     console.log(user);
-})
+}) // jab bhi hum esa syntax ma koi bhi parameter resolve ka andar pass karta hai to vo parameter huma output ma mil jata hai. 
 
-const promiseFour= new Promise(function(resolve,reject){
+
+  // 4) promise
+ const promiseFour= new Promise(function(resolve,reject){
     setTimeout(function(){
         let error = true
         if(!error){
@@ -57,7 +72,7 @@ const promiseFour= new Promise(function(resolve,reject){
 }).finally(() => console.log("The promise is either resolved or rejected"))
 
 
-
+// 5th promise
 const promiseFive = new Promise(function(resolve,reject){
     setTimeout(function(){
         let error = true
@@ -80,7 +95,6 @@ async function consumePromiseFive(){
 
 consumePromiseFive();
 
-consumePromiseFive()
 
 // async function getAllUsers(){
 //     try{
@@ -101,3 +115,14 @@ fetch('https://jsonplaceholder.typicode.com/users')
     console.log(data);
 })
 .catch((error) => console.log(error))
+
+
+// Promises is a object representing the eventual completion or failure of an asynchronous operation.
+
+// **** There are three state of Promises :
+// Pending	 = Operation is still running	Waiting for API response
+// Fulfilled = Operation completed successfully	Data received
+// Rejected = Operation failed	Network/server error
+
+
+ // Promise = A callback used to initialize the promise. This callback is passed two arguments: a resolve callback used to resolve the promise with a value or the result of another promise, and a reject callback used to reject the promise with a.
