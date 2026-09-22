@@ -4,9 +4,10 @@ function multipleBy5(num){    //function is also a object
 
  multipleBy5.power  = 2
 
- console.log(multipleBy5(5));
- console.log(multipleBy5.power);
- console.log(multipleBy5.prototype);
+ console.log(multipleBy5(5));// output = 25
+ console.log(multipleBy5.power); // output = 2
+ console.log(multipleBy5.prototype); // output = {}
+
 
  function createUser(username, score){
    this.username = username
@@ -34,8 +35,13 @@ A new object is created: The new keyword initiates the creation of a new JavaScr
 
 A prototype is linked: The newly created object gets linked to the prototype property of the constructor function. This means that it has access to properties and methods defined on the constructor's prototype.
 
-The constructor is called: The constructor function is called with the specified arguments and this is bound to the newly created object. If no explicit return value is specified from the constructor, javaScrint assumes this,the newly created object, to be the intended return value.
+The constructor is called: The constructor function is called with the specified arguments and this is bound to the newly created object. If no explicit return value is specified from the constructor, javaScript assumes this, that the newly created object, to be the intended return value.
 
-The new object is returned: After the constructor function has been called, if it doesn't return a non-primitive value (object, array, function, etc.), the newly created object is returned.
+The new object is returned: After the constructor function has been called, if it doesn't return a non-primitive value (object, array, function, etc.) the newly created object is returned.
 
 */
+
+// Javascript ma har ek chij object hai jo chij object ka pass ha vo Array,String ka pass bhi hogi.
+// Function is also reference to object.
+
+// Prototype method ka sath sath kuch internal properties bhi data hai.

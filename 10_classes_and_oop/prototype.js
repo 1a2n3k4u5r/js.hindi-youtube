@@ -1,7 +1,5 @@
-let myName = "ankur"
-
-
-  // console.log(myName.truelength); // .length is used to find the size or count of elements/characters in different data types.
+let myName = "ankur   "
+  console.log(myName.truelength); // .length is used to find the size or count of elements/characters in different data types.
 
 
   let myHeroes = ["thor", "spiderman"]
@@ -10,7 +8,7 @@ let myName = "ankur"
     thor: "hammer",
     spiderman: "sling",
 
-    getSoiderPower: function(){
+    getSpiderPower: function(){
         console.log(`Spidy power is ${this.spiderman}`)
     }
 }
@@ -53,9 +51,11 @@ Array.prototype.heyAnkur = function(){
 
  Teacher.__proto__ = User
 
+
  // modern syntax
  Object.setPrototypeOf(TeachingSupport,Teacher)
 
+ 
  let anotherUsername = "chaiAurCode     "
 
  String.prototype.trueLength = function(){
@@ -67,3 +67,6 @@ Array.prototype.heyAnkur = function(){
  //  anotherUsername.trueLenght()
  "ankur".trueLength()
  "iceTea".trueLength()
+
+
+ 
