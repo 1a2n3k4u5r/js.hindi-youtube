@@ -11,8 +11,8 @@
   //"33abc" => NaN, Undefined = NaN
  // true => 1 ;false => 0
 
+ 
   let  isloggedIn = " 1 "
-
   let booleanIsloggedIn = Boolean(isloggedIn)   // we use this for conversion of number into boolean
   console.log (booleanIsloggedIn); // output is true
 

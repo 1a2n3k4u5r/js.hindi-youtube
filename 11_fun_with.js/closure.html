@@ -11,12 +11,11 @@
 
     <script>
 // function init() {
-//   let name = "Mozilla"; 
-//   function displayName() {
-    
-//     console.log(name); 
+//          let name = "Mozilla"; 
+//          function displayName() {
+//          console.log(name); 
 //   }
-//   displayName();
+//     displayName();
 // }
 // init();       
 
@@ -35,6 +34,9 @@
 
 // outer()
 // console.log("TOO OUTER", username);
+
+
+  // ******* Closure ********
 
 // function makeFunc() {
 //   let name = "Mozilla"; 
@@ -57,6 +59,7 @@
         //     document.body.style.background = `green`
         // }
 
+        
         function clickHandler(color){
             // document.body.style.background = `${color}`
 
@@ -71,3 +74,15 @@
     </script>
 </body>
 </html>
+
+<!-- APP function ka andar jo bhi variable declare karta ho vo actually ma apko ouetr scope ma available nhi hota hai -->
+
+<!-- Lexical scoping ka matlab hai ki variable ka scope code mein uski position (jahan variable likha gaya hai) se decide hota hai, na ki function ko kahan se call kiya gaya hai. -->
+
+<!-- init() is the outer function
+displayName() is the inner function
+name is declared inside init()
+displayName() is defined inside init()
+Therefore, displayName() can access name -->
+
+onclick ko ek function chiya hota hai
