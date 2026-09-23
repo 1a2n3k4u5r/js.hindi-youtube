@@ -18,7 +18,7 @@
          //requirement
          document
          .querySelector('button')
-         .addEventListener('click', this.handleClick.bind(this))   //Binding a function to a specific this value and returning a new function.
+         .addEventListener('click', this.handleClick.bind(this))   //Binding a function to a specific this value and returning a new function or creates a new function whose this is permanently set to the current React object.
 
        }
        handleClick(){
@@ -27,6 +27,6 @@
        }
     }
     
-    const app = new React()
+    const app = new React()  // object
 </script>
 </html>
